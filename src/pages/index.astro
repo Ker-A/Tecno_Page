@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Waves from "../ui/Backgrounds/Waves/Waves";
+import Header from "../components/Header.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <div class="fixed -z-10 inset-0">
+    <Waves
+      client:load
+      lineColor="#fff"
+      backgroundColor="rgba(255, 255, 255, 0.2)"
+      waveSpeedX={0.02}
+      waveSpeedY={0.01}
+      waveAmpX={40}
+      waveAmpY={20}
+      friction={0.9}
+      tension={0.01}
+      maxCursorMove={120}
+      xGap={12}
+      yGap={36}
+    />
+  </div>
+  <header class="z-10">
+	<Header />
+  </header>
 </Layout>

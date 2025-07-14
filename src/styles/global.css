@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.font-nova-flat {
+  font-family: 'Nova Flat', system-ui;
+}
+
+.font-gilda-display {
+  font-family: 'Gilda Display', serif;
+}
