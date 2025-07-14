@@ -1,0 +1,42 @@
+---
+const anio = new Date();
+---
+
+<section>
+  <div>
+    <ul class="flex justify-center gap-4 text-white">
+      <li class="flex gap-10 text-basic font-nova-flat uppercase lg:text-2xl">
+        <a
+          class="border-b-2 border-transparent transition duration-300 hover:border-fuchsia-700 hover:text-fuchsia-700"
+          href="#">Home</a
+        >
+        <a
+          class="border-b-2 border-transparent transition duration-300 hover:border-fuchsia-700 hover:text-fuchsia-700"
+          href="#">About</a
+        >
+        <a
+          class="border-b-2 border-transparent transition duration-300 hover:border-fuchsia-700 hover:text-fuchsia-700"
+          href="#">Sold</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex justify-center space-x-5 my-6">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+    </a>
+  </div>
+
+  <div class="pb-6">
+    <p class="text-center text-white font-medium  font-nova-flat">
+      &copy; {anio.getFullYear()} Company Ltd. All rights reservered.
+    </p>
+  </div>
+</section>
